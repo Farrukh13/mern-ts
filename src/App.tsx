@@ -4,7 +4,7 @@ import './App.css';
 function ProductCategoryRow({ category }: any) {
   return (
     <tr>
-      <th colSpan="2">
+      <th col-Span="2">
         {category}
       </th>
     </tr>
@@ -26,7 +26,7 @@ function ProductRow({ product }: any) {
 }
 
 function ProductTable({ products }: any) {
-  const rows: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | JSX.Element[] | null | undefined = [];
+  const rows: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | JSX.Element[] | null | undefined = [];
   let lastCategory: null = null;
 
   products.forEach((product:any) => {
